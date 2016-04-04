@@ -1,0 +1,30 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "meteor": true
+    },
+    "plugins": [
+//        "react",
+        "meteor"
+    ],
+    "extends": [
+      "airbnb/base",
+      "plugin:meteor/recommended"
+    ],
+    "ecmaFeatures": {
+        "defaultParams": false,
+        "destructuring": false,
+        "forOf": true,
+        "generators": true
+    },
+    "rules": {
+      "comma-dangle": 0,
+      "space-before-function-paren": [2, {"anonymous": "always", "named": "always"}]
+    }
+}
