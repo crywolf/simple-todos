@@ -1,7 +1,11 @@
 <body>
   <div class="container">
     <header>
-      <h1>ToDo List</h1>      
+      <h1>ToDo List</h1>
+
+      <form id="new-task">
+        <input type="text" name="text" placeholder="Type to add new tasks" />
+      </form>
     </header>
 
     {{#if tasks}}
@@ -9,11 +13,7 @@
         {{#each tasks}}
           {{> task}}
         {{/each}}
-    </ul>
+      </ul>
     {{/if}}
   </div>
 </body>
-
-<template name="task">
-  <li>{{text}}</li>
-</template>
