@@ -38,7 +38,7 @@ Template.task.events({
   'click .toggle-checked' () {
     Tasks.update(this._id, {
       $set: {
-        checked: ! this.checked
+        checked: !this.checked
       }
     });
   },
